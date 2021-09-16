@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165827535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-165827535-1');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<script>
+ // eSchool  POPUP showcase script
+  function popup() {
+        Swal.fire({
+          html:
+            "<h1 class='popup-h1'>Hi, School Owner</h1>" +
+            "<h4 class='text'>Increase the pass rate of your students in ( WACE, NECO, JUNIOR WACE & NCEE - Common Entrance) exams with eSchool approved practice questions.</h4>" +
+            "<p class='text'>We understand the importance of practice questions in preparing your students for the respective exams.</p>" +
+            "<p><b>Sign up on eSchool to have FREE access to over 10,000 practice questions.</b></p>",
+          imageurl :
+            "C:\Users\DELL\Desktop\vishal\vishal.html",
+          imageAlt: "Custom image",
+          showCloseButton: true,
+          confirmButtonText:
+            '<a href="https://docs.google.com/forms/d/e/1FAIpQLScZXe8y-Oj5Z635kBpihEUTt4XP-4u3fVINec6Xeh6UFaYGvg/viewform?usp=sf_link" target="_blank"> Sign Up</a>',
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+          customClass: {
+            confirmButton: "btn-popup",
+          },
+          buttonsStyling: false,
+        });
+      }
+      setTimeout(popup, 2000);
+</script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<style>
+  .swal2-image {
+    object-fit: contain;
+    width: 900px;
+    height: 250px;
+    padding: 2rem 2rem 0px 2rem;
+   }
+  .btn-popup button {
+    border: none;
+  }
+  .btn-popup {
+    display: block;
+    margin-left: 8px;
+    font-size: large;
+    padding: 8px 50px;
+    border: 2px solid #5dc560;
+    border-radius: 5px;
+    background-color: #5dc560;
+    text-decoration: none;
+  }
+  .btn-popup a:hover {
+    color: rgb(214, 214, 208);
+  }
+  .btn-popup a {
+    color: #fff;
+  }
+  .text {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  .swal2-popup {
+    width: 50em !important;
+    background-color: whitesmoke;
+  }
+  .swal2-close {
+    font-size: 3.5rem;
+     font-weight: bold;
+    color: rgb(48, 49, 47);
+  }
+
+  @media only screen and (max-width: 720px) {
+      .swal2-popup {
+        padding: 0px 0px 1.25em 0px !important;
+      }
+     .swal2-popup {
+        width: 40em !important;
+        background-color: whitesmoke;
+     }
+    .text {
+      font-size: 15px;
+      text-align: center;
+    }
+    .popup-h1 {
+      font-size: 20px;
+    }
+    .swal2-image {
+      object-fit: contain;
+      height: 150px !important;
+   }
+  }
+
+  @media only screen and (max-width: 520px) {
+      .swal2-popup {
+        width: 30em !important;
+        background-color: whitesmoke;
+     }
+    .text {
+      font-size: 15px;
+      text-align: center;
+    }
+    .popup-h1 {
+      font-size: 20px;
+    }
+  }
+   
+   @media (max-width: 767px){
+        .konnect-carousel {
+            display: block !important;
+        }
+  }
+  
+</style>
+<!-- Favicon -->
+
+<link href="img/fav.png" rel="shortcut icon" type="image/png"/>
+
+<!-- Title -->
+<title>School Management System in Nigeria | eLearning </title>
+
+<!-- Bootstrap Core CSS -->
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom icon Fonts -->
+<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Konnect Slider -->
+<link href="css2/konnect-slider.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css2/animate.css" media="all" rel="stylesheet" type="text/css" />
+
+<!-- Main CSS -->
+<link href="css2/theme.css" rel="stylesheet">
+<link href="css2/green.css" rel="stylesheet" id="style_theme">
+
+         <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+       <![endif]-->
+
+      <!-- <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/C84B3DFB-BDD1-B44E-94E5-8E0DDD8A47D8/main.js" charset="UTF-8"></script> -->
+</head>
+
+<!-- Body -->
+<body>
+<!-- Pre Loader -->
+<!-- <div class="loading">
+  <div class="loader"></div>
+</div> -->
+<!-- Scroll to Top --> 
+<a id="scroll-up" ><i class="fa fa-angle-up"></i></a> 
+<!-- Color Changer -->
+<div class="theme-settings" id="switcher"> <span class="theme-click"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></span> <span class="theme-color theme-default theme-active" data-color="green"></span> <span class="theme-color theme-blue" data-color="blue"></span> <span class="theme-color theme-red" data-color="red"></span> <span class="theme-color theme-violet" data-color="violet"></span>
+  <p>(Or) Your favorite color</p>
+</div>
+<!-- Top Bar  -->
+<div class="konnect-info">
+  <div class="container-fluid">
+    <div class="row"> 
+      <!-- Top bar Left -->
+      <div class="col-md-6 col-sm-8 hidden-xs">
+        <ul>
+          <li><i class="fa fa-paper-plane" aria-hidden="true"></i> info@eschool-ng.com </li>
+          <li class="li-last"> <i class="fa fa-volume-control-phone" aria-hidden="true"></i>+234 8099450201</li>
+        </ul>
+      </div>
+      <!-- Top bar Right -->
+      <div class="col-md-6 col-sm-4">
+        <ul class="konnect-float-right">
+          <li><a href="login.php"><i class="fa fa-user-o" aria-hidden="true"></i> Login </a></li>
+          <li><a href="signup.php"><i class="fa fa-file-text-o" aria-hidden="true"></i> Register </a></li>
+          <li class="li-last hidden-xs hidden-sm"><a target="_blank" href="https://www.instagram.com/eschoolng/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a><a target="_blank" href="https://web.facebook.com/Eschoolng-102994485132344?_rdc=1&_rdr"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="https://www.youtube.com/channel/UCFa7IuK_dvaZEfK4MX7s3yw?view_as=subscriber"> <i class="fa fa-youtube"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Navigation + LOGO Area -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header"> 
+      <!-- Responsive Menu -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <img src="img/icons/menu.png" alt="menu" width="40"> </button>
+      <!-- Logo --> 
+      <a class="navbar-brand" href="index.html"><img class="logo-change" src="img/logo-green.png" alt="logo"></a> </div>
+    
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="index.html">Home</a></li>
+        <li class=""><a href="aboutus.html">About Us</a></li>
+       
+         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pricing <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="pricing_ng.html">NG Schools (Naira)</a></li>
+            <li><a href="pricing_za.html">ZA Schools (Rand)</a></li>
+            <li><a href="pricing_usd.html">Other Countries Schools (USD)</a></li>
+            <!--<li><a href="modules.html">Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>-->
+          </ul>
+        </li>
+        <li><a href="aboutus.html"> Features <i aria-hidden="true"></i></a>
+          </li>
+            <!--<li><a href="modules.html">Modules</a></li>
+            <li><a href="pricing.html">Pricing</a></li>-->
+          
+        
+        <li><a href="pricing.html">Register Free <i aria-hidden="true"></i></a>
+          </li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contactus.php">Contact Us</a></li>
+        <li class="search-icon"><a href="javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+          <div class="search-form">
+            <form class="navbar-form" role="search">
+              <div class="input-group add-on">
+                <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<!--Konnect Slider -->
+<div class='konnect-carousel carousel-image carousel-image-pagination carousel-image-arrows flexslider'>
+  <ul class='slides'>
+      <!--Slider One-->
+    <li class='item'>
+      <div class='container'>
+        <div class='row pos-rel'>
+          <div class='col-md-6 animate pos-sta hidden-xs hidden-sm'> <img class="img-responsive img-left fadeInUpBig animated" alt="Circle" src="img/slider/student-2.png" /> </div>
+          <div class='col-sm-12 col-md-6 animate'>
+            <h2 class='big fadeInUpBig animated delay-point-five-s'>All-In-One School Manager</h2>
+            <p class='normal fadeInDownBig animated delay-one-s'>
+                Easy to use school management & learning management system. You can access centralized data from anywhere, anytime with any smart device</p>
+            <a class='btn btn-bordered btn-white btn-lg fadeInLeftBig animated delay-one-point-five-s' href='/aboutus.html'> Read more </a> 
+            <a class='btn btn-bordered btn-white btn-lg fadeInLeftBig animated delay-one-point-five-s' href='#'> Try Demo </a>
+          </div>
+        </div>
+      </div>
+    </li>
+      
+    <!--Slider Two-->
+    <li class='item'>
+      <div class='container'>
+        <div class='row pos-rel'>
+          <div class='col-sm-12 col-md-6 animate'>
+            <h1 class='big fadeInDownBig animated'>Biometric Attendance Solutions</h1>
+            <p class='normal fadeInUpBig animated delay-point-five-s'>Biometric and electronic card attendance solution for students and staff. Student clock in with electronic or biometric card and the parents receive realtime sms notification.
+            Staff clock in with biometric and admin receives real-time attendance report.</p>
+            <a class='btn btn-bordered btn-white btn-lg fadeInRightBig animated delay-one-s' href='/index.html#download'> Get The App </a> </div>
+          <div class='col-md-6 animate pos-sta hidden-xs hidden-sm'> <img class="img-responsive img-right fadeInUpBig animated delay-one-point-five-s" alt="iPhone" src="img/slider/biometric-1.gif" /> </div>
+        </div>
+      </div>
+    </li>
+    
+    <!--Slider Three-->
+    <li class='item'>
+      <div class='container'>
+        <div class='row pos-rel'>
+          <div class='col-sm-12 col-md-6 animate'>
+            <h2 class='big fadeInLeftBig animated'>e-School is flexible</h2>
+            <p class='normal fadeInRightBig animated delay-point-five-s'>Yes, eSchool is flexible, scalable, reliable, inexpensive, robust, easy to use, secure and all the other good adjectives in the dictionary.</p>
+            <a class='btn btn-bordered btn-white btn-lg fadeInUpBig animated delay-one-s' href='/index.html#download'> Get The App </a> </div>
+          <div class='col-md-6 animate pos-sta hidden-xs hidden-sm'> <img class="img-responsive img-right fadeInUpBig animated delay-one-point-five-s" alt="Man" src="img/slider/student-3.png" /> </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!--/. Konnect Slider --> 
+
+<!-- Banner Box -->
+<div class="container banner">
+  <div class="row">
+    <div class="col-sm-4">
+       <div class="banner-bar"> <img src="img/icons/money.png" alt="icon">
+        <h3><span>Value for Money</span></h3>
+        <p>
+            eSchool is an EdTech Solution that automates up to 80% of manual processes of school administration / management and learning process.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="banner-bar"> <img src="img/icons/classroom.png" alt="icon">
+        <h3><span>eLearning Simplified</span></h3>
+        <p>
+            eSchool has Lesson Notes & Assignments, CBT, and over 10,000 Exam Practice Questions  to help teachers and students 
+           to improve learning process.
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="banner-bar"> <img src="img/icons/job-support.png" alt="icon">
+        <h3><span>Improved Collaboration</span></h3>
+        <p>With our communication diary and result management modules, parents are able to communicate with teachers and school admin real-time.</p>
+      </div>
+    </div> 
+  </div>
+</div>
+<!-- Company profile -->
+<section>
+  <div class="container">
+     <div class="row">
+      <div class="col-md-12"> 
+        <!--Services Heading-->
+        <h2 class="section-heading">Who We Are?</h2>
+        <div class="template-space"></div>
+      </div>
+     </div>
+     
+      <div class="row">
+      <div class="col-md-6">
+        <h2 class="para-heading">About e-School</h2>
+        <p>eSchool is a cloud based School Management and Learning Management System that makes managing educational institutions easy and efficient. It provides useful insights for students, teachers, administrators and parents and helps them make better and faster decisions.</p>
+       <p> eSchool is very easy and intuitive to use. Anyone with basic skills of using a computer or mobile phone would find it easy to setup and use eSchool. We offer a 30-day FREE trial for our paid plans (Basic, Medium, Large).</p>
+        <a class="service-box-button" href="aboutus.html" style="margin-bottom: 2rem;">View More</a> </div>
+        
+
+      <div class="col-md-6"> 
+        <div style=" position: relative; padding-bottom: 56.25%; /* 16:9 */ height: 0;">
+            <iframe width="560" height="315" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+             src="https://www.youtube.com/embed/803tq_4mFLs">
+           </iframe>
+      
+        </div>
+      </div>
+    </div>
+  </div><section>
+ 
+</section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+    
+                           
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- eSchool -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6304218397086014"
+     data-ad-slot="6167971229"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                           
+                             </div></div></div>
+ <section style="background-color: #f5f5f5">
+         <div class="container" style="background-color: #f5f5f5">
+    <h2 class="section-heading">Used and Trusted by over 500 schools in Nigeria</h2>
+    <div class="template-space"></div>
+      <marquee behavior="scroll" direction="left">
+      <img src="img/brand/1.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/2.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/3.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/4.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/5.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/6.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/7.png" width="300" height="90" alt="W3docs" />
+       <img src="img/brand/8.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/9.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/10.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/11.png" width="300" height="90" alt="W3docs" />
+       <img src="img/brand/12.png" width="300" height="90" alt="W3docs" />
+      <img src="img/brand/13.png" width="300" height="90" alt="W3docs" />
+         </marquee>
+         </div>
+         </div>
+ </section>
+
+<!--Our Happy Clients
+    <section style="background-color: #f5f5f5">
+       <div class="container" style="background-color: #f5f5f5">
+    <h2 class="section-heading">Used and Trusted by:</h2>
+    <div class="template-space"></div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar"> 
+        <img src="img/clients/zytoon.png" alt="zytoon image">
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar">
+          <img src="img/clients/coronet_img.png" alt="coronet image">
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar"> 
+        <img src="img/clients/natcollogo2.jpg" alt="national college image">
+      </div>
+    </div> 
+  </div><br>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar">
+        <img src="img/clients/vokeseel.png" alt="vokeseel image">
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar"> 
+        <img src="img/clients/glomat_blosom.png" alt="glomat blossom img">
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar"> 
+        <img src="img/clients/roseville.png" alt="rose ville img">
+      </div>
+    </div> 
+  </div><br>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar">
+          <img src="img/clients/newroyfaith2.png" alt="royfaith image">
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">
+      <div class="banner-bar">
+          <img src="img/clients/strongtow.gif" alt="strong tower image">
+      </div>
+    </div>
+    <!-- <div class="col-sm-4 col-xs-12 col-md-4 col-lg-4">-->
+    <!--  <div class="banner-bar"> <img src="img/icons/classroom.png" alt="icon">-->
+    <!--    <h3><span>Education Simplified</span></h3>-->
+    <!--    <p>Our guaranteed and stable streaming over any browsers helps administrators to access or modify data from anywhere at any time without interruptions.</p>-->
+    <!--  </div>-->
+    <!--</div> -->
+  </div>
+</div>
+</section>   
+
+<!--Testmonials -->
+<aside class="dark-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-white">
+        <h2 class="section-heading text-white">Testimony</h2>
+        <div class="template-space"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" data-wow-delay="0.2s">
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel"> 
+          <!-- Carousel Slides / Quotes -->
+          <div class="carousel-inner text-center"> 
+            <!--Testmonial One active-->
+            <div class="item active">
+              <blockquote>
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <p>
+                        I have been using eschool for a while now and i must say it exceeds  expectations. I have been able to manage  my school operations with no stress at all.
+                    </p>
+                    <div>School <small> Crown Imperial School, Lagos</small> </div>
+                 </div>
+                </div>
+              </blockquote>
+            </div>
+            
+            <!--Testmonial Two-->
+            <div class="item">
+              <blockquote>
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <p>Truly Amazing, phenomenal customer service, reliable and quite affordable! E-school literally makes learning easy.</p>
+                    <div>School <small> Kingsvile School, Abuja </small> </div>
+                   </div>
+                </div>
+              </blockquote>
+            </div>
+            
+        
+          <!-- Carousel Buttons Next/Prev --> 
+          <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left"></i></a> <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right"></i></a> 
+          <!-- Bottom Carousel Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#quote-carousel" data-slide-to="1"></li>
+            <li data-target="#quote-carousel" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Gallery Box-->
+<section class="template-news">
+  
+</section>
+
+<!--Call To Action-->
+<aside class="theme-bg aside-cta" id="download">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 text-white">
+        <h3 class="margin-10 text-white">DOWNLOAD THE APP</h3>
+      </div>
+      <div class="col-sm-3 col-xs-6 text-center text-white purchase-button"> <a target="_blank" href="https://play.google.com/store/apps/details?id=com.eschool_ng.app" class="template-button" style="text-transform: none;"><font size="5"><i class="fa fa-android"></i></font> Google Store</a> </div>
+      <div class="col-sm-3 col-xs-6 text-center text-white purchase-button"> <a href="javascript:void(0)" class="template-button" style="text-transform: none;">&nbsp;<font size="5"><i class="fa fa-apple"></i></font> Apple Store &nbsp;</a> </div>
+    </div>
+  </div>
+</aside>
+<!--/ Call To Action--> 
+
+<!--Main footer-->
+<section class="main-footer">
+  <div class="container">
+    <div class="row"> 
+      <!--footer widget one-->
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-widget"> <img src="img/logo-green.png" alt="" class="img-responsive logo-change">
+          <p>Yes, eSchool is flexible, scalable, reliable, inexpensive, robust, easy to use, secure and all the other good adjectives in the dictionary.</p>
+          <span><a href="#" class="read-more">Read more</a></span> </div>
+      </div>
+      <!--/ footer widget one--> 
+      
+      <!--footer widget Two-->
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-widget address">
+          <h3>Contact</h3>
+          <p><i class="fa fa-address-card-o" aria-hidden="true"></i> <span>76, Mobolaji Bank Anthony Way,
+<br>
+            Anthony Agbodji Office Complex,<br>
+            1st floor left wing, Ikeja, Lagos.</span></p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>info@eschool-ng.com</span></p>
+          <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> <span>+234 8099450201 </span></p>
+          <p><i class="fa fa-whatsapp"></i>(Only) +234 8034994115</p>
+        </div>
+      </div>
+      <!--/ footer widget Two--> 
+      
+      <!--footer widget Three-->
+      <div class="col-md-4 col-sm-6">
+        <div class="footer-widget quicl-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><i class="fa  fa-angle-right"></i> <a href="aboutus.html">About</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="features.html">Features</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="mobile.html">Mobile App</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="modules.html">Modules</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="pricing.html">Pricing</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="demo.html">Try Demo</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="faq.html">FAQ</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="contactus.html">Contact Us</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="privacy.php">Privacy Policy</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="terms.php">Terms of Service</a></li>
+            <li><i class="fa  fa-angle-right"></i> <a href="authorized_partners.php">Authorized Partners</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--/ footer widget thre--> 
+    </div>
+  </div>
+</section>
+<!--/Main Footer--> 
+
+<!--copyright Footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 text-left"> 
+        
+        <!--Footer Social Icons-->
+        <div class="contact-social">
+          <p><a target="_blank" href="https://www.instagram.com/eschoolng/?hl=en"> <i class="fa fa-instagram"></i> </a> <a target="_blank" href="https://web.facebook.com/Eschoolng-102994485132344?_rdc=1&_rdr"> <i class="fa fa-facebook"></i> </a>  <a target="_blank" href="https://www.youtube.com/channel/UCFa7IuK_dvaZEfK4MX7s3yw?view_as=subscriber"> <i class="fa fa-youtube"></i> </a></p>
+        </div>
+      </div>
+      
+      <!-- Footer Copy rights-->
+      <div class="col-md-6 col-sm-6 text-right">
+        <address style="color: #000">&copy; <script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script> e-School-ng.com. All Rights Reserved. &nbsp; &nbsp; &nbsp;| Designed by <a href="http://akisolutions.com.ng" target="_blank" style="color: #5DC560;">
+            AKI Solutions</a></address>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- jQuery --> 
+
+<script src="assets/jquery/jquery.min.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+
+<!-- Konnect Slider JavaScript --> 
+<script src="js/jquery.flexslider.min.js" type="text/javascript"></script> 
+<script src="js/konnect-slider.js" type="text/javascript"></script> 
+
+<!-- Theme JavaScript --> 
+<script src="js/default.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77800499-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
